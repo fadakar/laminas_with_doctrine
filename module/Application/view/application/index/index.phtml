@@ -1,0 +1,16 @@
+<table class="table">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Message</th>
+    </tr>
+    </thead>
+    <tbody>
+    <?php foreach ($list as $item): ?>
+        <tr>
+            <td><?= $item->getId() ?></td>
+            <td><?= $item->getText() ?></td>
+        </tr>
+    <?php endforeach; ?>
+    </tbody>
+</table>
