@@ -21,10 +21,10 @@ class IndexController extends AbstractActionController
 
     public function indexAction()
     {
-        $item = $this->em->getRepository(Message::class)->find(1);
-        $item->setText(rand(1, 1000));
-        $this->em->persist($item);
-        $this->em->flush();
+//        $item = $this->em->getRepository(Message::class)->find(1);
+//        $item->setText(rand(1, 1000));
+//        $this->em->persist($item);
+//        $this->em->flush();
 
         $data = $this->em->getRepository(Message::class)->findAll();
         return new ViewModel(['list' => $data]);
